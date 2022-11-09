@@ -1,3 +1,5 @@
 from django.db import models
 
-# Create your models here.
+
+class Experiment(models.Model):
+    number_of_conditions = models.IntegerField()
