@@ -21,7 +21,7 @@ class ExperimentTestCase(TestCase):
             counter_balanced_condition = experiment.get_counter_balanced_condition()
             if count_by_conditions.get(counter_balanced_condition.name, None) is None:
                 count_by_conditions[counter_balanced_condition.name] = 0
-            count_by_conditions[counter_balanced_condition.name] +=1
+            count_by_conditions[counter_balanced_condition.name] += 1
 
         # Verify that all the conditions have been returned the same number of times
         self.assertEqual(2, count_by_conditions['A'])
